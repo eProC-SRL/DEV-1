@@ -1,0 +1,12 @@
+Versión de Software 
+-----------------------------------------------------------------------------------
+TIA Portal V13 SP1 (Versión establecida por Gerdau por disponibilidad de Licencias)
+-----------------------------------------------------------------------------------
+
+
+Versión de proyecto
+-----------------------------------------------------------------------------------
+v103:
+Instalada 6/9/19 by JGB
+Ajuste de tiempos del volteador para la malla mas rapida.
+Modificacion comportamiento disco varillas para que avance hasta recuperar varilla cuando lo retrocedes.

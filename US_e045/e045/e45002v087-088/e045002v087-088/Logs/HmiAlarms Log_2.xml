@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="HmiAlarms Log_2.xml" projectName="C:\Users\FRD\Desktop\HmiAlarms.xlsx" typeText="Tipo" messageText="Mensaje" timeText="Tiempo">
+  <LogEntry type="Warning" dateTime="10:47:20">
+    <Message>Failed to import formatted text, because imported data is invalid.</Message>
+  </LogEntry>
+  <LogEntry type="Information" dateTime="10:47:21">
+    <Message>Importación finalizada: 112 avisos de bit; 0 avisos analógicos</Message>
+  </LogEntry>
+</LogFile>

@@ -1,0 +1,121 @@
+v081:
+A partir de la v080, modificado por FRD
+Se edita un DB del PLC que influye en la visualización del HMI.
+
+v080:
+Modificado por FRD desde la v079
+Migración de HMI de KTP600 a KTP700
+
+v078:
+Modificado por JGB
+Se retiró el cartonero. Se puentean por software las entradas que vienen del cartonero. se bloquea la llamada al bloque
+que genera las salidas al cartonero. Se invisibilizan los botones en panel para controlar el cartonero, asi como los
+objetos animados que tienen que ver con el mismo para evitar que habiliten el cartonero nuevamente. 
+
+v077: 
+Modificado por FRD.
+Instalado el 19/07/2018 por JGB.
+Corrección en bits de recetas para evitar los huecos piso por medio que se generaban.
+
+v076:
+Corrección de generación de señal "aplicar cartón" para evitar que se ponga cartón si el pallet no llegó aun.
+
+v075: 
+Modificación en plc y panel para poner 0, 1 o 2 cartones.
+
+v074:
+Pruebas para poner 2 cartones.
+
+v073:
+Correcciones con Cartonero al fallar Cartonero.
+
+v072:
+Correcciones y pruebas de funcionamiento con Cartonero.
+
+v071:
+Agregado de control del cartonero.
+
+V070:
+Movimiento manual de palet desde envolvedora ahora inhibe barreras seg. entrada envolvedora y no requiere Envolvedora en marcha, sólo Brazo en Posición.
+Movimiento manual de palet desde Ketan o envolvedora ahora permite arrancar motor transporte 4 (Ketan).
+Retardo deshabilitación dosificador por solapa levantada, para que deje la caja en una posición más conveniente.
+
+v069:
+Correcciones a la v068
+
+v068:
+Agregado confirmaciones de marcha en E33.1 a E33.4. Con alarmas
+
+v067:
+Modificación para que Falsa lectura de sensores paren Dosificador y no CICLO (Ala 27 a 30)
+
+v066:
+Agregado habilitación marcha brazo envolvedora. Con alarma
+Agregado habilitación marcha transporte 3, desde envolvedora. Con alarma
+
+v065:
+Agregado de comunicación con envolvedora en E10.5 y A16.3
+
+v064:
+Agregado de algunos comentarios en el programa.
+Agregado condición para activar Alarma 82 (Barrera Seg. salida Envolvedora)
+
+v063:
+Modificación para que el variador del Elevador maneje el freno.
+
+v060:
+Agregado algunos comentarios.
+Agregado Sensor contador de cajas 3 en la entrada E10.4, atrás del Stop de cajas para aumentar
+velocidad cinta verde.
+Modificación para resetear los estados del Dosificador ante una falla grave.
+Velocidad cinta verde dentro de recetas.
+Agregado de mensaje de "Acumulación de palets a la salida".
+Agregado falla "Caja Tapando Sensor 3 (Tope Cajas)".
+Agregado falla "Falsa lectura en Sensor Embalajes 3 (Tope Cajas)".
+Agregado pantallas y mejoras gráficas.
+
+v049:
+Se volvió a atrás con la activación del pistón por recetas ya que la edición de recetas
+anda mal.
+
+v048:
+Agregado de filtros para los sensores contadores de cajas en máquina.
+
+v047:
+Se modificó en el OB1 para que cuente capas y palets en modo manual con los sensores.
+Se agregaron redundancias de seguridad para los movimientos manuales.
+Se agregó que la plataforma baje lento en el estado 2s1 en modo automático.
+Corrección en FC de carga de recetas.
+Corrección en FC_INC_ELEM_ACTUAL para que active el bit de error si corresponde
+Agregado de alarma en FC_Dosificador para error de programación de FC_INC_ELEM_ACTUAL.
+
+v046:
+Se filtraron los flancos negativos de los 3 sensores de caja en máquina.
+Se programaron 3 alarmas de control de flancos en dichos sensores (Alarmas 27, 28 y 29).
+
+v045:
+Se subió un poco el TOF_Gira_Caja, pero si se sube a más de T#1S_300MS,
+empieza a intentar activarlo en la próxima caja, que no debería.
+
+v044:
+Se corrigió el problema al detener el dosificador, hacía mal el dibujo al arrancar.
+
+v043:
+Se agregó una marca de "Medio_Camino" sustituyendo una variable Temp.
+
+V042:
+Velocidades ajustables desde panel en modo manual.
+Pantallas en modo manual para ver estados de sensores.
+Se cambió un tiempo de parada de cinta de entrada de cajas.
+
+V039:
+
+OB1:	se agregaron los segmentos 5, 9 y 21.
+FC26:	Se agregó el segmento 1.
+FC24:	Se agregó el segmento 2.
+FC20: 	Activa_Pistón			NUEVO.
+FC5:	Cuenta_Cajas			NUEVO.
+FC4:	EDITADO.
+FC16:	EDITADO. Cambia "Fila_Completa" y "PEDIDO_de_CAJA".
+FC2:	Valida_Velocidades		NUEVO.
+FC6:	CAPA Receta_Animación_Receta	NUEVO.

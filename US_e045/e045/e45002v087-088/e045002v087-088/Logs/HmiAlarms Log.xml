@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="HmiAlarms Log.xml" projectName="C:\Users\FRD\Desktop\HmiAlarms.xlsx" typeText="Tipo" messageText="Mensaje" timeText="Tiempo">
+  <LogEntry type="Information" dateTime="20:51:21">
+    <Message>Importación finalizada: 112 avisos de bit; 0 avisos analógicos</Message>
+  </LogEntry>
+</LogFile>
